@@ -1,0 +1,77 @@
+<!-- activity_login.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:text="  Log in"
+        android:textSize="55sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="70dp"
+        android:hint=" Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginTop="35dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Log in"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tvAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Intentos restantes: 3"
+        android:textColor="#FF0000"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="350sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAttempts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#EDE2E2"
+        android:text="Or sign up"
+        android:textColor="#009688"
+        android:textColorHighlight="#009C27B0"
+        android:textSize="25sp" />
+
+</RelativeLayout>
